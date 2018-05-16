@@ -1,0 +1,39 @@
+ADDI R8, R0, #44
+ADDI R6, R0, #1
+SW R6, 700(R0)
+ADDI R7, R0, #4
+SW R6, 700(R7)
+ADDI R10, R0, #8
+ADDI R3, R10, #-8
+LW R1, 700(R3)
+ADDI R4, R10, #-4
+LW R2, 700(R4)
+ADD R5, R1, R2
+SW R5, 700(R10)
+ADDI R10, R10, #4
+BEQ R10, R8, #4
+J #616
+NOP
+BREAK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
